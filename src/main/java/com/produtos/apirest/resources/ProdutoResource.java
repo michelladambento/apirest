@@ -30,7 +30,7 @@ public class ProdutoResource {
 	ProdutoRepository produtoRepository;
 
 	@GetMapping("/produtos")
-	@ApiOperation(value="Retorna a lista de produtos")
+	@ApiOperation(value="Retorna uma lista de produtos")
 	public List<Produto> listaProdutos() {
 		return produtoRepository.findAll();
 	}
